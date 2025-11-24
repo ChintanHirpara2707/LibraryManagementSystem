@@ -107,7 +107,7 @@ npm install
 
 4. Install client dependencies
 ```
-cd ../client
+cd ../lms
 npm install
 ```
 
