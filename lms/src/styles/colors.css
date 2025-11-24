@@ -1,0 +1,146 @@
+:root {
+  /* Main Color Palette - light theme */
+  --emerald-green: #3e6d4a; /* primary accent */
+  --wasabi: #CCCCCC;       /* neutral border */
+  --creased-khaki: #F5F5F5;/* light background */
+  --egyptian-earth: #333333;/* dark text/accent */
+  --noir-de-vigne: #333333; /* primary text */
+
+  /* Semantic Colors */
+  --primary: var(--emerald-green);
+  --secondary: var(--wasabi);
+  --accent: var(--egyptian-earth);
+  --background: #FFFFFF;
+  --background-alt: var(--creased-khaki);
+  --text-primary: var(--noir-de-vigne);
+  --text-secondary: #666666;
+  --text-light: #FFFFFF;
+
+  /* Button Colors */
+  --btn-primary-bg: var(--emerald-green);
+  --btn-primary-text: #FFFFFF;
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: var(--emerald-green);
+  
+  /* Link Colors */
+  --link-color: var(--emerald-green);
+  --link-hover: #2c5036;
+  
+  /* Border Colors */
+  --border-light: #E0E0E0;
+  --border-dark: #CCCCCC;
+  
+  /* Status Colors */
+  --success: #2c5036;
+  --warning: #b58900;
+  --error: #b00020;
+
+  /* Shadows with theme colors */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.16);
+}
+
+/* Global Styles */
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background-color: var(--link-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+  border: 2px solid var(--emerald-green);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+  background-color: var(--emerald-green);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Card Styles */
+.card {
+  background: var(--background);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Form Elements */
+input, select, textarea {
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--emerald-green);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(62, 109, 74, 0.12);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0;
+}
+
+th {
+  background-color: var(--emerald-green);
+  color: #FFFFFF;
+  padding: 1rem;
+  text-align: left;
+}
+
+td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+tr:hover {
+  background-color: var(--background-alt);
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
