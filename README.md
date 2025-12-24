@@ -1,4 +1,6 @@
-# Library Management System
+# Library Management System ( MERN Stack )
+
+This Library Management System is a full-stack MERN project designed for colleges and universities. It supports book management, student accounts, issuing/returning books, fines, and admin reports.
 
 Tattva Library Management System is a MERN-stack (MongoDB, Express, React, Node.js) application that provides a complete library management experience with separate interfaces for Users and Admins. This README explains how to run and deploy the project locally and to production (Docker, Heroku, VPS, or static hosting + server), environment variable configuration, seeding the database, and common troubleshooting steps.
 
