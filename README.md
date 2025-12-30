@@ -2,7 +2,7 @@
 
 This Library Management System is a full-stack MERN project designed for colleges and universities. It supports book management, student accounts, issuing/returning books, fines, and admin reports.
 
-Tattva Library Management System is a MERN-stack (MongoDB, Express, React, Node.js) application that provides a complete library management experience with separate interfaces for Users and Admins. This README explains how to run and deploy the project locally and to production (Docker, Heroku, VPS, or static hosting + server), environment variable configuration, seeding the database, and common troubleshooting steps.
+Tattva Library Management System is a MERN-stack (MongoDB, Express, React, Node.js) application that provides a complete library management experience with separate interfaces for Users and Admins.[...]
 
 > Repository: ChintanHirpara2707/LibraryManagementSystem
 
@@ -42,11 +42,14 @@ This README focuses on deployment and developer setup. Adjust commands to match 
 
 ## Prerequisites
 
-- Node.js (v16+ recommended)
+- Node.js v24.11.1 (tested)
 - npm or yarn
-- MongoDB instance (Atlas URI or local `mongod`)
-- (Optional) Docker & docker-compose
-- (Optional for VPS) Nginx, PM2
+- MongoDB instance (Atlas or local `mongod`)
+
+**Default development ports**
+
+- Frontend: http://localhost:3000
+- Backend (API): http://localhost:5000
 
 ---
 
@@ -169,6 +172,7 @@ pm2 start server/index.js --name tattva-server
 Consider using Nginx as reverse proxy for SSL and serving static assets.
 
 ---
+
 <img width="1352" height="680" alt="1" src="https://github.com/user-attachments/assets/08544811-627f-4aeb-bf7e-1eca2b3a6861" />
 <img width="1350" height="768" alt="2" src="https://github.com/user-attachments/assets/81d02c6c-0002-4479-8dfc-e252ffe306c9" />
 <img width="1344" height="768" alt="3" src="https://github.com/user-attachments/assets/7e6bd264-488a-408b-aa1e-2d55ee1bc7d7" />
