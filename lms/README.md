@@ -47,9 +47,14 @@ A full-stack Library Management System built with the MERN stack (MongoDB, Expre
 ## Prerequisites
 
 Before running this project, make sure you have the following installed:
-- **Node.js** (v14 or higher)
+- **Node.js** (v24.11.1 — tested)
 - **npm** or **yarn**
 - **MongoDB Atlas** account (or local MongoDB)
+
+**Default development ports**
+
+- Frontend: http://localhost:3000
+- Backend (API): http://localhost:5000
 
 ## Installation
 
